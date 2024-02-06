@@ -1,3 +1,4 @@
+from django.http import HttpRequest, HttpResponse
 from django.shortcuts import render
 
 """
@@ -13,10 +14,9 @@ from django.shortcuts import render
 """
 
 
-def about_us_view(request):
+def about_us_view(request: HttpRequest) -> HttpResponse:
     company_name = 'Learn Python'
     work_from_year = 2013
-
     return render(
         request,
         'level_1/about_us.html',
