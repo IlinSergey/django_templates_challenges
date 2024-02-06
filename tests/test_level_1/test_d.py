@@ -1,7 +1,7 @@
 from pytest_django.asserts import assertTemplateUsed
 
 
-def test__get_phone_number_view(client):
+def test__about_us_view(client):
     response = client.get('/about/')
     assert response.status_code == 200
     assert response.context['company_name'] == 'Learn Python'
