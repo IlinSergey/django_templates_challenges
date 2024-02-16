@@ -6,7 +6,8 @@
 from django.http import HttpRequest, HttpResponse
 from django.shortcuts import render
 
-from django_templates_homework.generators.transactions import generate_fake_transactions
+from django_templates_homework.generators.transactions import \
+    generate_fake_transactions
 
 
 def transactions_list_view(request: HttpRequest) -> HttpResponse:
